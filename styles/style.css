@@ -1,19 +1,8 @@
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-section{
-  border: red solid 1px;
-}
-  .link{
-    color: #2f80ed;
-    text-decoration:none;
+  .page {
+    min-width:1100px;
+    max-width:1600px;
+    margin:0 auto;
+    font-family:'Helvetica Neue', Arial, sans-serif;
   }
   .header {
     height:100vh;
@@ -23,8 +12,12 @@ section{
     position:relative;
     background-color:#f2f2f2;
    }
+  .link{
+    color:#2f80ed;
+    text-decoration:none;
+  }
   .logo{
-    position: absolute;
+    position:absolute;
   }
   .logo_place_header{
     width:183px;
@@ -44,36 +37,36 @@ section{
     line-height:96px;
   }
   .header__subtitle{
-    width: 388px;
-    position: absolute;
+    width:388px;
+    position:absolute;
     z-index:1;
-    left: 64px;
-    bottom: 30px;
-    font-size: 18px;
+    left:64px;
+    bottom:30px;
+    font-size:18px;
     line-height:25px;
     font-weight:normal;
   }
   .header__main-ilustation{
-    position: absolute;
-    width: 765px;
-    height: 608px;
+    position:absolute;
+    width:765px;
+    height:608px;
     bottom:0;
-    right: 0;
-    z-index: 1;
-    object-fit: cover;
+    right:0;
+    z-index:1;
+    object-fit:cover;
   }
   .header__square-pic {
-    height: 568px;
-    width: 568px;
+    height:568px;
+    width:568px;
     background-color:#2f80ed;
-    position: absolute;
-    justify-content: end;
+    position:absolute;
+    justify-content:end;
     top:64px;
-    right: 0;
+    right:0;
   }
   .description {
-    display: flex;
-    justify-content: center;
+    display:flex;
+    justify-content:center;
   }
   .two-columns {
     width:80%;
@@ -107,31 +100,39 @@ section{
     line-height:34px;
   }
   .table{
+    width:1100px;
+    margin:0 auto 100px;
     display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    border:1px solid #d5530d;
+    flex-flow:row wrap;
+    justify-content:space-between;
     align-content:space-between;
+    z-index:5;
+    padding:0;
+  }
+  .table__cell{
+    width:250px;
+    margin:60px 0 0;
+    list-style:none;
+    padding:0;
   }
   .section-title{
-    width: 60%;
+    width:60%;
     font-size:60px;
     font-weight:bold;
     line-height:69px;
     margin: 100px auto 20px;
-    text-align: center;
+    text-align:center;
   }
   .section-subtitle {
-    width: 60%;
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 34px;
-    margin: auto;
-    text-align: center;
+    width:60%;
+    font-size:24px;
+    font-weight:normal;
+    line-height:34px;
+    margin:auto;
+    text-align:center;
   }
   .table__heading{
-    font-size: 24px;
+    font-size:24px;
     font-weight:bold;
     line-height:1.15;
   }
@@ -141,10 +142,6 @@ section{
     line-height:1.2;
     margin-top:20px;
   }
-  .table__cell{
-    width:250px;
-    border:1px solid #c413c9;
-  }
   .feynman{
     height:790px;
     margin-top:100px;
@@ -152,7 +149,6 @@ section{
     position:relative;
     display:flex;
     flex-direction:column;
-
   }
   .feynman__title{
     width:648px;
@@ -164,7 +160,7 @@ section{
   }
   .feynman__subtitle{
     margin-top:70px;
-    text-align: center;
+    text-align:center;
     font-size:36px;
     font-weight:normal;
     line-height:51px;
@@ -172,11 +168,11 @@ section{
   }
   .feynman__link{
     position:absolute;
-    right: 48px;
+    right:48px;
     top:50%;
     font-size:36px;
     font-weight:normal;
-    line-height: 51px;
+    line-height:51px;
   }
   .feynman__image{
     width:867px;
@@ -185,14 +181,96 @@ section{
     left:0;
     bottom:0;
   }
-
-
-
-/* и элемента с модификатором вида ключ-значение */
+  .kaufman{
+    background-color:#1f1f1f;
+    position:relative;
+    overflow:hidden;
+  }
+  .section-title_theme_dark{
+    width:60%;
+    color:white;
+    text-align:center;
+    font-size:60px;
+    font-weight:bold;
+    line-height:69px;
+    margin-top:80px;
+  }
+  .section-subtitle_theme_dark{
+    width:60%;
+    color:white;
+    text-align:center;
+    font-size:34px;
+    font-weight:normal;
+    line-height:34px;
+    margin-top:20px;
+  }
+  .table_theme_dark{
+    margin:0 auto 90px;
+  }
   .table__cell_theme_dark {
-  width:200px;
-  color:white;
-  margin-right:0;
-  margin-top:80px;
-}
+    width:200px;
+    color:white;
+    margin:80px 0 0;
+    z-index:1;
+  }
+  .kaufman__image{
+    width:877px;
+    height:877px;
+    position:absolute;
+    right:-210px;
+    top:0;
+  }
+  .footer{
+    min-height:350px;
+    background-color:#1f1f1f;
+    color:white;
+    display:flex;
+  }
+  .footer__column{
+    width:90%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin:60px auto 40px;
+  }
+  .footer__column_content_info{
+    display:flex;
+    flex-direction:column;
+  }
+  .footer__column_content_social{
+    display:flex;
+    flex-direction:column;
+  }
+  .footer__column-heading{
+    font-size:18px;
+    font-weight:bold;
+    line-height:30px;
+    margin:0 0 20px;
+  }
+  .footer__column-links{
+    font-size:18px;
+    font-weight:normal;
+    line-height:30px;
+    color:white;
+    text-decoration:none;
+    margin:0 0 16px;
+  }
+  .footer__social-icon{
+    width:16px;
+    height:16px;
+    margin-right:10px;
+  }
+  .logo_place_footer{
+    width:183px;
+    height:35px;
+  }
+  .footer__author{
+    font-size:18px;
+    font-weight:normal;
+    line-height:25px;
+    margin:18px 0;
+    justify-self:flex-end;
+    align-self:flex-end;
+  }
+
 
