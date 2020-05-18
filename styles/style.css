@@ -8,12 +8,12 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
-  div{
-    border:1px solid red;
-  }
-  section{
-    border: 1px green solid;
+section{
+  border: red solid 1px;
+}
+  .link{
+    color: #2f80ed;
+    text-decoration:none;
   }
   .header {
     height:100vh;
@@ -106,19 +106,93 @@
     font-weight:bold;
     line-height:34px;
   }
+  .table{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border:1px solid #d5530d;
+    align-content:space-between;
+  }
+  .section-title{
+    width: 60%;
+    font-size:60px;
+    font-weight:bold;
+    line-height:69px;
+    margin: 100px auto 20px;
+    text-align: center;
+  }
+  .section-subtitle {
+    width: 60%;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 34px;
+    margin: auto;
+    text-align: center;
+  }
+  .table__heading{
+    font-size: 24px;
+    font-weight:bold;
+    line-height:1.15;
+  }
+  .table__text{
+    font-size:18px;
+    font-weight:normal;
+    line-height:1.2;
+    margin-top:20px;
+  }
+  .table__cell{
+    width:250px;
+    border:1px solid #c413c9;
+  }
+  .feynman{
+    height:790px;
+    margin-top:100px;
+    background-color:#f2f2f2;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+
+  }
+  .feynman__title{
+    width:648px;
+    font-size:120px;
+    font-weight:bold;
+    text-align:center;
+    margin:100px auto 20px;
+    z-index:1;
+  }
+  .feynman__subtitle{
+    margin-top:70px;
+    text-align: center;
+    font-size:36px;
+    font-weight:normal;
+    line-height:51px;
+    z-index:1;
+  }
+  .feynman__link{
+    position:absolute;
+    right: 48px;
+    top:50%;
+    font-size:36px;
+    font-weight:normal;
+    line-height: 51px;
+  }
+  .feynman__image{
+    width:867px;
+    height:637px;
+    position:absolute;
+    left:0;
+    bottom:0;
+  }
+
+
 
 /* и элемента с модификатором вида ключ-значение */
   .table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  width:200px;
+  color:white;
+  margin-right:0;
+  margin-top:80px;
 }
-.flex-row{
-  display: flex;
-  flex-direction: row;
-}
-.flex-column{
-  display: flex;
-  flex-direction: column;
-}
+
