@@ -17,10 +17,11 @@
     text-decoration:none;
   }
   .logo{
+    width:183px;
+    background-size:cover;
     z-index:2;
   }
   .logo_place_header{
-    width:183px;
     height:32px;
     position:absolute;
     top:30px;
@@ -307,7 +308,6 @@
     margin-right:10px;
   }
   .logo_place_footer{
-    width:183px;
     height:35px;
   }
   .footer__author{
