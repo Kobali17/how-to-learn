@@ -1,8 +1,5 @@
 .video__iframes{
-  width:515px;
   height:316px;
-  position: relative;
-  top:200px;
   display:flex;
  justify-content:center;
   flex-direction:row;

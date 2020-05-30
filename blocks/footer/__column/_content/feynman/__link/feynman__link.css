@@ -9,3 +9,7 @@
   line-height:51px;
   margin:0;
 }
+.feynman__link:hover{
+  opacity: 0.4;
+  transition: ease 0.5s;
+}
