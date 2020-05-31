@@ -2,12 +2,13 @@
 @import url(__title/feynman__title.css);
 @import url(__link/feynman__link.css);
 @import url(__image/feynman__image.css);
-.feynman{
-  height:790px;
-  padding-top:100px;
-  background-color:#f2f2f2;
-  position:relative;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+
+.feynman {
+  height: 790px;
+  padding-top: 100px;
+  background-color: #f2f2f2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
