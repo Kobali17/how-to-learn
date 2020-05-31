@@ -3,7 +3,4 @@
   padding:0;
   margin: 0 0 16px 0;
 }
-.footer__column-links:hover{
-  opacity: 0.4;
-  transition: ease 0.5s;
-}
+

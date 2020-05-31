@@ -1,6 +1,6 @@
-@import url(../__cell/_theme_dark/table__cell_theme_dark.css);
-@import url(../__heading/_theme_dark/table__headig_theme_dark.css);
-@import url(../__text/_theme_dark/table__text_theme_dark.css);
+@import url(table__cell_theme_dark.css);
+@import url(table__headig_theme_dark.css);
+@import url(table__text_theme_dark.css);
 .table_theme_dark{
   margin:0 auto 90px;
 }
